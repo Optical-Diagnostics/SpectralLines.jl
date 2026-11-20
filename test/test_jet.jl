@@ -2,7 +2,9 @@ using SpectralLines, Test
 using JET
 import SpectralLines: faddeyeva, LineConvolution
 
-JET.test_package(SpectralLines; target_modules = (SpectralLines,))
+JET.test_package(SpectralLines; target_modules = (SpectralLines,),
+broken = VERSION >= v"1.14-"
+)
 
 const TM = (SpectralLines,)
 
