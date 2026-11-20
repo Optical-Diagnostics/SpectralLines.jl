@@ -230,7 +230,7 @@ the spectrum is not a smooth function of it, and such a call throws.
 struct SparseLDM{W} <: LineSynthesisMethod
     res_G::Float64
     res_L::Float64
-    truncation::Union{Nothing,W}
+    truncation::W
 end
 function SparseLDM(; res_G = 0.01, res_L = 0.01, truncation = nothing)
     truncation === nothing || truncation > zero(truncation) ||

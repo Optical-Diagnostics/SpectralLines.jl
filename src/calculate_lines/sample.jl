@@ -13,7 +13,7 @@ Multithreaded when Julia runs with threads (`julia -t N`).
 """
 struct PointSample{A} <: LineSynthesisMethod
     wing_cut::Union{Nothing,Float64}
-    min_amplitude::Union{Nothing,A}
+    min_amplitude::A
 end
 PointSample(; wing_cut = nothing, min_amplitude = nothing) =
     PointSample{cutoff_type(min_amplitude)}(wing_cut, min_amplitude)

@@ -16,7 +16,7 @@ resolves the profile.
 struct BinAverage{W,A} <: LineSynthesisMethod
     bin_width::W
     wing_cut::Union{Nothing,Float64}
-    min_amplitude::Union{Nothing,A}
+    min_amplitude::A
 end
 function BinAverage(; bin_width, wing_cut = nothing, min_amplitude = nothing)
     w = float(bin_width)
