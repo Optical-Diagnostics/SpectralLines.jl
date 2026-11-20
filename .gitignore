@@ -1,0 +1,8 @@
+*.jl.*.cov
+*.jl.cov
+*.jl.mem
+/docs/Manifest*.toml
+/docs/build/
+/Manifest*.toml
+/benchmark/Manifest*.toml
+/_research/
