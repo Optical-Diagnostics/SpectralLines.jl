@@ -38,4 +38,4 @@ spectrum = calculate_lines(xs, lines, LDM())      # fast for 10⁵+ lines
 
 ```
 
-See the [documentation](https://jqfeld.github.io/SpectralLines.jl/dev/) for the full API.
+See the [documentation](https://optical-diagnostics.github.io/SpectralLines.jl/dev/) for the full API.
