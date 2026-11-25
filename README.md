@@ -24,6 +24,13 @@ All four methods are forward-mode differentiable, second derivatives included.
 `MonteCarloMeasurements.Particles`. `PointSample` and `BinAverage` are multithreaded, and
 `LDM` and `SparseLDM` take reusable workspaces for fitting loops.
 
+## Install
+This package is registered in the Julia Registry and can be installed via
+```julia-repl
+julia> import Pkg
+julia> Pkg.add("SpectralLines")
+```
+
 ## Example
 
 ```julia
